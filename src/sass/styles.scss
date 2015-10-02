@@ -1,0 +1,53 @@
+//===============================================================================
+// IMPORTS
+//===============================================================================
+// normalize.css v3.0.0 | MIT License | git.io/normalize
+@import "_normalize.scss";
+
+// define mixins & functions
+@import "_mixins.scss";
+
+//===============================================================================
+// VARIABLES
+//===============================================================================
+$paper:  white;
+$ink:    rgba(10,0,141,1);
+$blue: rgba(0,0,246,1);
+$pink: rgba(255,0,141,1);
+$yellow: rgba(255,223,141,1);
+
+//===============================================================================
+// BASICS
+//===============================================================================
+// box-sizing everywhere and webkit text rendering correction
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+// remove padding & list styles from all <ul> as default
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: $ink;
+  color: $ink;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+//===============================================================================
+// STYLES
+//===============================================================================
+
+.game-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 10px solid $blue;
+}
